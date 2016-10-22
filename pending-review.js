@@ -30,7 +30,7 @@ function printPullRequests(pullRequests, owner, repo) {
 }
 
 let pendingReview = '- [ ] @' + user;
-github.repos.getForOrg({org: 'versionpress'}, (err, repos) => {
+github.repos.getForOrg({org: owner}, (err, repos) => {
     repos.forEach(repo => {
         github.pullRequests.getAll({
             owner,
