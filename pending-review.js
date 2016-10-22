@@ -3,7 +3,7 @@ const argv = require('minimist')(process.argv.slice(2));
 
 require('dotenv').config();
 
-const user = 'janvoracek';
+const user = argv.user || process.env.USER;
 const owner = argv.org || process.env.ORGANIZATION;
 const token = argv.token || process.env.PERSONAL_ACCESS_TOKEN;
 

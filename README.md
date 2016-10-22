@@ -5,11 +5,11 @@ Simple CLI tool for checking pending reviews.
 ## Installation
 
 1. `yarn i`
-2. Copy `.env.example` to `.env` and set access token and organization.
+2. Copy `.env.example` to `.env` and set access token, organization and user.
 
 ## Usage
 
-`node pending-review [--org=<organization>] [--token=<personal-access-token>]`
+`node pending-review [--org=<organization>] [--token=<personal-access-token>] [--user=<username>]`
 
 ## Sample output
 
